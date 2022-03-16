@@ -11,10 +11,10 @@ var firebaseConfig = {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     
-    user_name = localStorage.getItem("Username")
+    user_name = localStorage.getItem("user_name")
     room_name = localStorage.getItem("room_name")
     function logOut(){
-          localStorage.removeItem("Username")
+          localStorage.removeItem("user_name")
           localStorage.removeItem("room_name")
           window.location = "index.html"
           
